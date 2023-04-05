@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img svg {
+    border: 1px solid black;
+    fill: black;
+    stroke: black;
+}
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #ffffff;
+    --ff-primary: 'Roboto','sans serif';
+}
+body {
+    background-color: var(--bg-color);
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    min-height: 100vh;
+    display: grid;
+
+    
+    button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    button img {
+        width: clamp(3.2rem,2rem + 12vw, 6.4rem);
+    }    
+    .relogio {
+        width: 32.1rem;
+        height: 21.3rem;
+        justify-self: center;
+        align-self:center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .temporizador {
+        display: flex;
+        justify-content: center;
+        font-family: Roboto;
+        font-size: clamp(4rem,4rem + 10vw ,8.8rem);
+        font-weight: 500;
+        line-height: 14.8rem;
+        letter-spacing: 0em;
+
+    }
+
+    .nav {
+        margin: 0 auto;
+        width: clamp(10rem,10rem + 30vw,22.8rem);
+        height:clamp(8rem,5rem + 10vw,10.8rem) ;
+        display: flex;
+        gap:1.2rem;
+        justify-content: center;
+        align-items: center;
+
+        
+        background-color: #02799D;
+
+        border-radius: 9999px;
+    }
+}
+
+
+
+footer {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
